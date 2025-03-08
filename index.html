@@ -1,11 +1,83 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Our page</title>
-    </head>
-    <body>
-        <h1>demo test</h1>
-        <!-- <img src="cat.png" alt="cat"> -->
-        <!-- <img src="alien.gif" alt="punny" width="100%"> -->
-    </body>
-</html>
+	<head lang="en">
 
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Portfolio</title>
+
+		<link rel="stylesheet" href=Digital_Resume.css>
+	</head>
+
+	<body>
+	
+	<div class="parent-wraper">
+	
+	<div class="navbar">
+	
+	<a href="./index.html" class="child1">Melwin W</a>
+	<a href="./project.html">Project</a>
+	<a href="./writings.html">Writings</a>
+	<a href="./contact.html">Contact</a>
+	<a href="./friends.html">Friends</a>
+	
+	</div>
+		
+		  <p class="quote">“People and networks are similar" - can be applied!</p>
+
+		  <hr class="break">
+
+	<div class="main-body">
+	
+		<p> Hi, I’m Melwin, an passionate MCA student currently pursuing my Post Gradution. I Excited to learn
+		new skills and exploring the endless possibilities in the tech world.</p>
+    
+		<p>My primary focus is on Backend and frontend development, particularly in mastering Java , Spring boot, and React.
+	   I enjoy creating functional web logic and front end  that enhance user experience.</p>
+	
+	   <p>Right now, I’m honing my skills in Backend development by building robust API and endpoints using spring web. 
+	   Every project is a chance for me to learn, experiment, and improve.</p>
+	
+	   <p>I aim to grow as a developer by continuously expanding my knowledge and taking on challenging projects.
+		I believe that the best way to learn is through practice and curiosity.</p>
+	
+		<img src="melwinpic.jpg" alt="melwin pic">
+    
+	</div>
+
+		<button class="download" id="resume">
+
+			Download CV
+
+		</button>
+
+	<footer>
+		@melv
+	</footer>
+
+	</div>
+
+	<script>
+
+const down = document.getElementById("resume").addEventListener("click", function () {
+
+const link = document.createElement("a")
+
+link.href = "./melwinresume.pdf";
+link.download = "melwinresume.pdf";
+
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+
+});
+
+
+	</script>
+
+	<script src="download.js"></script>
+	</body>
+
+</html>
